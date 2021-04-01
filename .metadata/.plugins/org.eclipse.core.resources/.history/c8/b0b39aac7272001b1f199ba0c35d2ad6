@@ -1,0 +1,17 @@
+package day4;
+
+import java.util.Arrays;
+
+public class Ex6 {
+	int[] a = {10, 20, 30, 40, 50, 61};
+
+	// private visibility - or change it as needed
+	private void resizeArray(int newLength) {
+	    a = Arrays.copyOf(a, a.length + newLength);
+	    System.out.println("New length: " + a.length);
+	}
+	
+	public static void main(String[] args) {
+		resizeArray(50);
+	}
+}

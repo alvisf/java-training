@@ -1,0 +1,12 @@
+package day4;
+
+public class Ex5 {
+ static int avg(){
+	 return 0;
+ }
+ 
+ public static void main(String[] args) {
+	int[] myArray = {1,4,2,23,2,32};
+	System.out.println(avg(myArray));
+}
+}

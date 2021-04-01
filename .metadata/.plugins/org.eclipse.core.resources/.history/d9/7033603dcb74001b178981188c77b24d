@@ -1,0 +1,9 @@
+package day5;
+
+public class E14 {
+public static void main(String[] args) {
+	if(i) {          
+		System.out.println("Hello");
+		}
+}
+}

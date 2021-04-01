@@ -1,0 +1,10 @@
+package day4;
+
+public class Ex8 {
+public static void main(String[] args) {
+	
+	String[] list= {"f","e"};
+	System.out.println(new String(list).indexOf("e")); 
+
+}
+}

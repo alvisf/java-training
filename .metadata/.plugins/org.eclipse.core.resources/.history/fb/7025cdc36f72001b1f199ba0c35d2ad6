@@ -1,0 +1,16 @@
+package day4;
+
+import java.util.stream.IntStream;
+
+public class Ex5 {
+	static int avg;
+ static int avg(int[]myArray ){
+	 avg=IntStream.of(myArray).sum()/myArray.length;
+	 return 0;
+ }
+ 
+ public static void main(String[] args) {
+	int[] myArray = {1,4,2,23,2,32};
+	System.out.println(avg(myArray));
+}
+}

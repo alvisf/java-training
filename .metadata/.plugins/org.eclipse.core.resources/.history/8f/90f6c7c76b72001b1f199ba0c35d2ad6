@@ -1,0 +1,22 @@
+package day4;
+
+import com.sun.java_cup.internal.runtime.Scanner;
+
+public class Ex3 {
+	static boolean val1=true;  //init on creation 
+	   static int val2;   
+	   static float val3;
+	   static String val4;
+	   static long val5;
+	   static double val6;
+	   
+	   public Ex3(double val6, String val4) {
+		   this.val6=val6;
+		   this.val4=val4;
+	   }
+	   
+	   public static void main(String[] args) {
+	      val2=1;   //init after creation
+	      Ex3 obj = new Ex3(1.2,"Hello World")
+	   }
+}

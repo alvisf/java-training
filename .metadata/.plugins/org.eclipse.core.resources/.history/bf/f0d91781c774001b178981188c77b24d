@@ -1,0 +1,5 @@
+package day5;
+
+public class E1 {
+	 float f=1.3;
+}

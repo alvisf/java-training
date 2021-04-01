@@ -1,0 +1,28 @@
+package day6;
+
+public class PaintDemo {
+	public static void main(String[] args) throws Exception{
+		
+	}
+	
+	class PaintBrush{
+		Paint paint;
+		public doPaint() {
+			System.out.println(paint);
+		}
+		
+	}
+	
+	abstract class Paint{
+		
+	}
+	
+	class RedPaint extends Paint{
+		
+	}
+	
+	class BluePaint extends Paint{
+		
+	}
+
+}

@@ -1,0 +1,12 @@
+package day4;
+
+import java.util.Arrays;
+
+public class Ex8 {
+public static void main(String[] args) {
+	
+	String[] arr= {"f","e"};
+	System.out.println(ArrayUtils.indexOf(arr, "e")); 
+
+}
+}

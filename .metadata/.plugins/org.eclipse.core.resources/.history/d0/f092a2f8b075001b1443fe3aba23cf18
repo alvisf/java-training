@@ -1,0 +1,55 @@
+package day6;
+
+import java.util.Scanner;
+
+public class ChildDogDemo {
+	public static void main(String[] args) {
+		BullDog tiger=new BullDog();
+		NaughtyChild baby=new NaughtyChild();
+		Scanner scan=new Scanner(System.in);
+		System.out.println("Please enter a item...:");
+		String item=scan.next();
+		baby.playWithDog(tiger, item);
+	}
+}
+class BullDog{
+	public void play(String item) {
+		if(item.equals("stick")) {
+			System.out.println("you beat I bite......");
+		}
+		else if(item.equals("stone")) {
+			System.out.println("you hit I bark.....");
+		}
+	}
+}
+
+class WeaponType{
+	Weapon weapon;
+	public void getHit() {
+		weapon.weapon_used(this);
+	}
+}
+
+abstract class Weapon{
+	public abstract void weapon_used(WeaponType weapon_type);
+}
+
+class Stick extends Weapon{
+	@Override
+	public void weapon_used(WeaponType weapon_type) {
+		System.out.println("you beat I bite......");
+	}
+}
+
+class Stone extends Weapon{
+	@Override
+	public void weapon_used(WeaponType weapon_type) {
+		System.out.println("you hit I bark.....");
+	}
+}
+
+class NaughtyChild{
+	public void playWithDog(BullDog dog,String item) {
+		dog.play(item);
+	}
+}

@@ -1,0 +1,12 @@
+package day4;
+
+import com.sun.tools.javac.util.ArrayUtils;
+
+public class Ex8 {
+public static void main(String[] args) {
+	
+	String[] arr= {"f","e"};
+	System.out.println(ArrayUtils.indexOf(arr, "e")); 
+
+}
+}
